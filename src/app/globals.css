@@ -7,4 +7,56 @@
   .nav-item {
     @apply px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300;
   }
+
+  .hero-ring {
+    @apply absolute inset-0  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5;
+    transform: translate(-50%, -50%);
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes pulseRing1 {
+    0% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.5; }
+    50% { transform: translate(-50%, -50%) scale(1.05); opacity: 0.8; }
+    100% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.5; }
+  }
+
+  @keyframes pulseRing2 {
+    0% { transform: translate(-50%, -50%) scale(0.98); opacity: 0.6; }
+    50% { transform: translate(-50%, -50%) scale(1.02); opacity: 0.9; }
+    100% { transform: translate(-50%, -50%) scale(0.98); opacity: 0.6; }
+  }
+
+  @keyframes pulseRing3 {
+    0% { transform: translate(-50%, -50%) scale(0.97); opacity: 0.4; }
+    50% { transform: translate(-50%, -50%) scale(1.03); opacity: 0.7; }
+    100% { transform: translate(-50%, -50%) scale(0.97); opacity: 0.4; }
+  }
+
+  @keyframes pulseRing4 {
+    0% { transform: translate(-50%, -50%) scale(0.96); opacity: 0.3; }
+    50% { transform: translate(-50%, -50%) scale(1.04); opacity: 0.6; }
+    100% { transform: translate(-50%, -50%) scale(0.96); opacity: 0.3; }
+  }
+
+  .animate-pulse-ring-1 {
+    animation-name: pulseRing1;
+    animation-delay: 0s;
+  }
+
+  .animate-pulse-ring-2 {
+    animation-name: pulseRing2;
+    animation-delay: 0.5s;
+  }
+
+  .animate-pulse-ring-3 {
+    animation-name: pulseRing3;
+    animation-delay: 1s;
+  }
+
+  .animate-pulse-ring-4 {
+    animation-name: pulseRing4;
+    animation-delay: 1.5s;
+  }
 }
