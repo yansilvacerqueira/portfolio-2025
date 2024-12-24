@@ -16,6 +16,21 @@
     animation-timing-function: ease-in-out;
   }
 
+  @keyframes hand-wave {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-10deg); }
+    40% { transform: rotate(10deg); }
+    60% { transform: rotate(-5deg); }
+    80% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  .animate-hand-wave {
+    display: inline-block;
+    animation: hand-wave 2s ease-in-out infinite;
+    transform-origin: 70% 70%;
+  }
+
   @keyframes pulseRing1 {
     0% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.5; }
     50% { transform: translate(-50%, -50%) scale(1.05); opacity: 0.8; }
