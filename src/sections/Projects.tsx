@@ -6,6 +6,7 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
+import { Card } from "@/components/Card";
 
 const projects = [
   {
@@ -65,33 +66,7 @@ export const ProjectsSection = () => {
 
         <div className="flex flex-col mt-10 gap-20 md:mt-20 ">
           {projects.map((project, index) => (
-            <div
-              key={index}
-              className="
-            bg-gray-500/20
-              px-8
-              pt-8
-              text-white
-              rounded-3xl
-              relative
-              z-0
-              overflow-hidden
-              after:z-10
-              after:content-['']
-              after:absolute
-              after:inset-0
-              after:outline-2
-              after:outline
-              after:-outline-offset-2
-              after:rounded-3xl
-              after:outline-black/10
-              after:pointer-events-none
-              md:px-10
-              md:pt-10
-              lg:pt-16
-              lg:px-20
-            "
-            >
+            <Card key={index}>
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="uppercase gap-2 inline-flex font-semibold text-sm  tracking-widest bg-gradient-to-r from-gray-800 to-gray-500 text-transparent bg-clip-text">
@@ -130,7 +105,7 @@ export const ProjectsSection = () => {
                   <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none" />
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
