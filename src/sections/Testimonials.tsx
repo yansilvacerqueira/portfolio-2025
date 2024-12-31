@@ -3,6 +3,9 @@ import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+import { Card } from "@/components/Card";
+import { SectionHeader } from "@/components/SectionHeader";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -38,5 +41,29 @@ const testimonials = [
 ];
 
 export const TestimonialsSection = () => {
-  return <div>Testimonials Section</div>;
+  return (
+    <section className="pb-16 lg:py-24">
+      <div className="container">
+        <SectionHeader
+          firstText="Happy clients"
+          title="What clients Say About Me"
+          description="Don't just take my word for it. See What my clients have to say
+        about my work."
+        />
+
+        <div className="mt-10 md:mt-20 flex flex-col gap-20">
+          {testimonials.map((testiomonial, index) => (
+            <Card key={index}>
+              <Image src={testiomonial.avatar} alt={testiomonial.name} />
+
+              <div>{testiomonial.name}</div>
+              <div>{testiomonial.position}</div>
+
+              <p>{testiomonial.text}</p>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
