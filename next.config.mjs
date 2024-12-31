@@ -1,5 +1,8 @@
+import { i18n } from 'next-i18next';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  i18n,
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
