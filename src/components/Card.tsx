@@ -14,6 +14,7 @@ export const Card = ({ children }: CardProps) => {
       text-white
         rounded-3xl
         relative
+        overflow-hidden
         z-0
         after:z-10
         after:content-['']
