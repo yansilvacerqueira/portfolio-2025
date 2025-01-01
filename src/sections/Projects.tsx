@@ -80,7 +80,7 @@ export const ProjectsSection = () => {
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
-                  <div className="uppercase gap-2 inline-flex font-semibold text-sm  tracking-widest bg-gradient-to-r from-gray-800 to-gray-500 text-transparent bg-clip-text">
+                  <div className="uppercase gap-2 inline-flex font-semibold text-sm tracking-widest bg-gradient-to-r from-gray-800 to-gray-500 text-transparent bg-clip-text">
                     <span>{project.company}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>
