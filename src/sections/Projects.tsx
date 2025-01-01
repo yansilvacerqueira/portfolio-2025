@@ -66,7 +66,18 @@ export const ProjectsSection = () => {
 
         <div className="flex flex-col mt-10 gap-20 md:mt-20 ">
           {projects.map((project, index) => (
-            <Card key={index}>
+            <Card
+              key={index}
+              className="
+                md:px-10
+                md:pt-10
+                lg:pt-16
+                lg:px-20
+                px-8
+                pt-8
+                pb-0
+              "
+            >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="uppercase gap-2 inline-flex font-semibold text-sm  tracking-widest bg-gradient-to-r from-gray-800 to-gray-500 text-transparent bg-clip-text">
