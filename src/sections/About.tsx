@@ -1,6 +1,11 @@
+'use client'
+import { motion } from "framer-motion"
+
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
+
 import StarIcon from "@/assets/icons/star.svg"
+import { useRef } from "react";
 
 const toolBoxItems = [
   {
@@ -83,6 +88,8 @@ const hobbies = [
 ]
 
 export const AboutSection = () => {
+  const constraintRef = useRef(null)
+
   return (
     <div className="py-20">
       <div className="container">
@@ -98,6 +105,7 @@ export const AboutSection = () => {
               <div>
                 <div className="flex items-center gap-2">
                   <StarIcon className="size-9 text-black" />
+
                   <h3 className="font-serif text-3xl text-black">My Reads</h3>
                 </div>
 
@@ -115,12 +123,31 @@ export const AboutSection = () => {
                 <p className="text-black/60 mt-5 text-sm md:text-base">Explore the technologies and tools i use to create a good digital experiences.</p>
               </div>
 
-              <div className="flex py-6 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-                <div className="flex flex-none gap-6">
+              <div className="py-6 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+                <div className="flex flex-none gap-2 animate-move-left [animation-duration:10s]">
                   {toolBoxItems.map((v, i) => (
-                    <div key={i} className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 outline-black/20 rounded-lg">
+                    <div key={i} className="inline-flex items-center gap-4 py-2 px-3 bg-black rounded-lg">
                       <span>icon</span>
-                      <p className="text-black/60 font-semibold">{v.title}</p>
+
+                      <p className="text-white font-semibold">{v.title}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-10 flex flex-none gap-2 animate-move-right [animation-duration:10s]">
+                  {toolBoxItems.map((v, i) => (
+                    <div key={i} className="inline-flex items-center gap-4 py-2 px-3 bg-black rounded-lg">
+                      <span>icon</span>
+
+                      <p className="text-white font-semibold">{v.title}</p>
+                    </div>
+                  ))}
+
+                  {toolBoxItems.map((v, i) => (
+                    <div key={i} className="inline-flex items-center gap-4 py-2 px-3 bg-black rounded-lg">
+                      <span>icon</span>
+
+                      <p className="text-white font-semibold">{v.title}</p>
                     </div>
                   ))}
                 </div>
@@ -133,25 +160,29 @@ export const AboutSection = () => {
               <div>
                 <div className="flex items-center gap-2">
                   <StarIcon className="size-9 text-black" />
+
                   <h3 className="font-serif text-3xl text-black">Beyond The Code</h3>
                 </div>
 
                 <p className="text-black/60 mt-5 text-sm md:text-base">Explore my interests and hobbies beyond the digital world.</p>
               </div>
 
-              <div className="mt-6 relative flex-1">
+              <div className="mt-6 relative flex-1" ref={constraintRef}>
                 {hobbies.map((hobby, i) => (
-                  <div
+                  <motion.div
                     key={i}
                     className="inline-flex gap-2 px-6 py-1.5 items-center bg-black rounded-full absolute"
                     style={{
                       left: hobby.left,
                       top: hobby.top
                     }}
+                    drag
+                    dragConstraints={constraintRef}
                   >
                     <p className="text-white font-semibold">{hobby.title}</p>
+
                     <span>{hobby.emoji}</span>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </Card>
@@ -160,6 +191,7 @@ export const AboutSection = () => {
               <div>
                 <div className="flex items-center gap-2">
                   <StarIcon className="size-9 text-black" />
+
                   <h3 className="font-serif text-3xl text-black">My Reads</h3>
                 </div>
 

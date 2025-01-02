@@ -1,5 +1,4 @@
 
-import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -28,7 +27,8 @@ const config: Config = {
         serif: 'var(--font-serif)',
       },
       animation: {
-        "move-left": "move-left 1s linear infinite"
+        "move-left": "move-left 1s linear infinite",
+        "move-right": "move-right 1s linear infinite",
       },
       keyframes: {
         "move-left": {
@@ -37,6 +37,14 @@ const config: Config = {
           },
           "100%": {
             transform: 'translateX(-50%)'
+          },
+        },
+        "move-right": {
+          "0%": {
+            transform: 'translateX(-50%)'
+          },
+          "100%": {
+            transform: 'translateX(0%)'
           },
         }
       }
