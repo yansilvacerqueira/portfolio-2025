@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -29,6 +28,7 @@ const config: Config = {
       animation: {
         "move-left": "move-left 1s linear infinite",
         "move-right": "move-right 1s linear infinite",
+        "logo": "logo 12s ease infinite alternate"
       },
       keyframes: {
         "move-left": {
@@ -37,7 +37,7 @@ const config: Config = {
           },
           "100%": {
             transform: 'translateX(-50%)'
-          },
+          }
         },
         "move-right": {
           "0%": {
@@ -45,11 +45,25 @@ const config: Config = {
           },
           "100%": {
             transform: 'translateX(0%)'
+          }
+        },
+        "logo": {
+          "0%": {
+            strokeWidth: "0",
+            strokeDasharray: "1 100"
           },
+          "25%": {
+            strokeWidth: "0.3",
+            strokeDasharray: "100 0"
+          },
+          "60%, 100%": {
+            strokeWidth: "0"
+          }
         }
       }
     },
   },
   plugins: [],
 };
+
 export default config;
