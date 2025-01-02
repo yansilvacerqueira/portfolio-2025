@@ -52,9 +52,26 @@ export const TestimonialsSection = () => {
         />
 
         <div className="mt-10 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <div className="flex flex-none gap-8">
+          <div className="flex flex-none gap-8 animate-move-left [animation-duration:60s] hover:[animation-play-state:paused]">
             {testimonials.map((testiomonial, index) => (
-              <Card key={index} className="max-w-xs md:max-w-md md:p-8">
+              <Card key={index} className="max-w-xs md:max-w-md md:p-8 hover:-rotate-3 transition duration-300">
+                <div className="flex items-center gap-4">
+                  <div className="bg-black/30 rounded-full size-16 flex-shrink-0">
+                    <Image src={testiomonial.avatar} alt={testiomonial.name} />
+                  </div>
+
+                  <div className="flex flex-col">
+                    <p className="text-black font-semibold">{testiomonial.name}</p>
+                    <p className="text-sm text-black/60">{testiomonial.position}</p>
+                  </div>
+                </div>
+
+                <p className="text-black/60 mt-5 text-sm md:text-base">{testiomonial.text}</p>
+              </Card>
+            ))}
+
+            {testimonials.map((testiomonial, index) => (
+              <Card key={index} className="max-w-xs md:max-w-md md:p-8 hover:-rotate-3 transition duration-300">
                 <div className="flex items-center gap-4">
                   <div className="bg-black/30 rounded-full size-16 flex-shrink-0">
                     <Image src={testiomonial.avatar} alt={testiomonial.name} />
