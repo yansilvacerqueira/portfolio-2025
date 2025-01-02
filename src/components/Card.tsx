@@ -1,4 +1,4 @@
-import { ReactNode } from "react"
+import { CSSProperties, ReactNode } from "react"
 import { twMerge } from "tailwind-merge"
 
 interface CardProps {
@@ -11,7 +11,7 @@ export const Card = ({ children, className }: CardProps) => {
     <div
       className={
         twMerge(`
-        bg-gray-500/20
+        bg-gray-300
         text-white
           rounded-3xl
           relative

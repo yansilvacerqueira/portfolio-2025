@@ -76,7 +76,9 @@ export const ProjectsSection = () => {
                 px-8
                 pt-8
                 pb-0
-              "
+                sticky
+                top-20
+                "
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
