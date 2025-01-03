@@ -5,40 +5,81 @@ import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
 
 import StarIcon from "@/assets/icons/star.svg"
+
+import TsIcon from "@/assets/icons/typescript.svg"
+import JsIcon from "@/assets/icons/square-js.svg"
+import AwsIcon from "@/assets/icons/aws.svg"
+import GoIcon from "@/assets/icons/golang.svg"
+import ReactIcon from "@/assets/icons/react.svg"
+import PyIcon from "@/assets/icons/python.svg"
+import NextIcon from "@/assets/icons/nextjs.svg"
+
 import { useRef } from "react";
 
 const toolBoxItems = [
   {
     title: 'TypeScript',
-    icon: ''
+    icon: TsIcon
   },
   {
     title: 'JavaScript',
-    icon: ''
+    icon: JsIcon
   },
   {
     title: 'GoLang',
-    icon: ''
+    icon: GoIcon
   },
   {
     title: 'AWS',
-    icon: ''
+    icon: AwsIcon
   },
   {
     title: 'Python',
-    icon: ''
+    icon: PyIcon
   },
   {
     title: 'React',
-    icon: ''
+    icon: ReactIcon
   },
   {
     title: 'NextJS',
-    icon: ''
+    icon: NextIcon
   },
   {
     title: 'ReactNative',
-    icon: ''
+    icon: ReactIcon
+  },
+]
+
+const toolBoxItems2 = [
+
+  {
+    title: 'React',
+    icon: ReactIcon
+  },
+  {
+    title: 'NextJS',
+    icon: NextIcon
+  },
+  {
+    title: 'ReactNative',
+    icon: ReactIcon
+  },
+  {
+    title: 'TypeScript',
+    icon: TsIcon
+  },
+  {
+    title: 'JavaScript',
+    icon: JsIcon
+  },
+  {
+    title: 'GoLang',
+    icon: GoIcon
+  },
+  {
+    title: 'AWS',
+    icon: AwsIcon
   },
 ]
 
@@ -127,7 +168,7 @@ export const AboutSection = () => {
                 <div className="flex flex-none gap-2 animate-move-left [animation-duration:10s]">
                   {toolBoxItems.map((v, i) => (
                     <div key={i} className="inline-flex items-center gap-4 py-2 px-3 bg-black rounded-lg">
-                      <span>icon</span>
+                      <v.icon className="size-9" />
 
                       <p className="text-white font-semibold">{v.title}</p>
                     </div>
@@ -135,17 +176,9 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="mt-10 flex flex-none gap-2 animate-move-right [animation-duration:10s]">
-                  {toolBoxItems.map((v, i) => (
+                  {toolBoxItems2.map((v, i) => (
                     <div key={i} className="inline-flex items-center gap-4 py-2 px-3 bg-black rounded-lg">
-                      <span>icon</span>
-
-                      <p className="text-white font-semibold">{v.title}</p>
-                    </div>
-                  ))}
-
-                  {toolBoxItems.map((v, i) => (
-                    <div key={i} className="inline-flex items-center gap-4 py-2 px-3 bg-black rounded-lg">
-                      <span>icon</span>
+                      <v.icon className="size-9" />
 
                       <p className="text-white font-semibold">{v.title}</p>
                     </div>
@@ -171,7 +204,7 @@ export const AboutSection = () => {
                 {hobbies.map((hobby, i) => (
                   <motion.div
                     key={i}
-                    className="inline-flex gap-2 px-6 py-1.5 items-center bg-black rounded-full absolute"
+                    className="inline-flex gap-2 px-6 py-1.5 items-center bg-black rounded-full absolute hover:cursor-pointer"
                     style={{
                       left: hobby.left,
                       top: hobby.top
