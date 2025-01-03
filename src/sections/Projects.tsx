@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import congenial from "@/assets/images/congenial.png";
+import kouloo from "@/assets/images/kouloo.png";
+import incript from "@/assets/images/incript.png";
 
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -10,40 +10,40 @@ import { Card } from "@/components/Card";
 
 const projects = [
   {
-    company: "Congenial",
-    year: "2023",
-    title: "Dark Saas Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
-  },
-  {
     company: "Incript",
     year: "2024",
-    title: "Light Saas Landing Page",
+    title: "Software company",
     results: [
       { title: "Boosted sales by 20%" },
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://www.incript.com.br",
+    image: incript,
   },
   {
     company: "Kouloo",
     year: "2024",
-    title: "AI Startup Landing Page",
+    title: "The application Kouloo allows you to synchronize in a few clicks the preparation of your children.",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://kouloo.com",
+    image: kouloo,
+  },
+  {
+    company: "Congenial",
+    year: "2023",
+    title: "Educational Technolagy Company",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    link: "https://app.congenial.com.br",
+    image: congenial,
   },
 ];
 
@@ -105,12 +105,10 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
 
-                  <a href={project.link} >
-                    <button className="gap-2 bg-black text-white h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center mt-8 md:w-auto px-8 hover:animate-button-hover">
-                      <span>Visit Live Site</span>
+                  <a href={project.link} target="_blank" className="gap-2 bg-black text-white h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center mt-8 md:w-auto px-8 hover:animate-button-hover" >
+                    <span>Visit Live Site</span>
 
-                      <ArrowUpRightIcon className="size-4" />
-                    </button>
+                    <ArrowUpRightIcon className="size-4" />
                   </a>
                 </div>
 
