@@ -14,7 +14,7 @@ export const Footer = () => {
           </div>
 
           <nav className="flex flex-col gap-6 md:flex-row">
-            <a href="#" className=" text-black inline-flex items-center gap-2">
+            <a href="https://www.linkedin.com/in/yan-cerqueira/" target="_blank" className=" text-black inline-flex items-center gap-2 hover:animate-button-hover">
               <span className="font-semibold">
                 Linkedin
               </span>
@@ -22,7 +22,7 @@ export const Footer = () => {
               <ArrowUpRightIcon />
             </a>
 
-            <a href="#" className=" text-black inline-flex items-center gap-2">
+            <a href="https://github.com/yansilvacerqueira" target="_blank" className="text-black inline-flex items-center gap-2 hover:animate-button-hover">
               <span className="font-semibold">
                 Github
               </span>

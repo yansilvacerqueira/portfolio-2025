@@ -106,7 +106,7 @@ export const ProjectsSection = () => {
                   </ul>
 
                   <a href={project.link} >
-                    <button className="gap-2 bg-black text-white h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center mt-8 md:w-auto px-8">
+                    <button className="gap-2 bg-black text-white h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center mt-8 md:w-auto px-8 hover:animate-button-hover">
                       <span>Visit Live Site</span>
 
                       <ArrowUpRightIcon className="size-4" />

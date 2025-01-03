@@ -17,7 +17,7 @@ export const ContactSection = () => {
           </div>
 
           <div>
-            <button className="bg-slate-100 text-black p-3 inline-flex items-center rounded-lg w-max gap-2">
+            <button className="bg-slate-100 text-black p-3 inline-flex items-center rounded-lg w-max gap-2 hover:animate-button-hover">
               <span className="font-semibold">
                 Contact Me
               </span>

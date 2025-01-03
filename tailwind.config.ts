@@ -28,9 +28,14 @@ const config: Config = {
       animation: {
         "move-left": "move-left 1s linear infinite",
         "move-right": "move-right 1s linear infinite",
-        "logo": "logo 12s ease infinite alternate"
+        "logo": "logo 12s ease infinite alternate",
+        'button-hover': 'button-hover 0.2s ease-out forwards'
       },
       keyframes: {
+        'button-hover': {
+          '0%': { transform: 'translateY(0) scale(1)' },
+          '100%': { transform: 'translateY(-4px) scale(1.02)' }
+        },
         "move-left": {
           "0%": {
             transform: 'translateX(0%)'
