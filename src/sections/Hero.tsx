@@ -2,7 +2,7 @@ import ArrowDown from '@/assets/icons/arrow-down.svg'
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative overflow-x-clip">
+    <div id="home" className="py-32 md:py-48 lg:py-60 relative overflow-x-clip">
       <div className="size-[620px] hero-ring animate-pulse-ring-1" />
       <div className="size-[820px] hero-ring animate-pulse-ring-2" />
       <div className="size-[1020px] hero-ring animate-pulse-ring-3" />

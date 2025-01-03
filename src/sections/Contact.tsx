@@ -2,7 +2,7 @@ import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
 
 export const ContactSection = () => {
   return (
-    <div className="py-16 pt-14 lg:py-24 lg:pt-20">
+    <section id="contact" className="py-16 pt-14 lg:py-24 lg:pt-20">
       <div className="container text-white">
         <div className="bg-black p-10 rounded-3xl flex flex-col md:flex-row items-center gap-8 md:gap-16">
 
@@ -27,6 +27,6 @@ export const ContactSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -49,7 +49,7 @@ const projects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="mt-48 pb-16 lg:py-24">
+    <section id="projects" className="mt-48 pb-16 lg:py-24">
       <div className="container">
         <p className="uppercase font-semibold  tracking-widest bg-gradient-to-r from-gray-600 to-gray-800  text-transparent bg-clip-text text-center">
           Real World Results

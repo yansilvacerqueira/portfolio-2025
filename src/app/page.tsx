@@ -60,10 +60,13 @@ export default function Home() {
         >
           <Header />
           <HeroSection />
+
           <ProjectsSection />
           <TapeSection />
+
           <TestimonialsSection />
           <AboutSection />
+
           <ContactSection />
           <Footer />
         </motion.div>

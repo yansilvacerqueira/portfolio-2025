@@ -142,3 +142,9 @@
     @apply lg:max-w-5xl;
   }
 }
+
+@layer components {
+  .nav-item {
+    @apply px-4 py-1.5 rounded-full cursor-pointer font-medium text-sm;
+  }
+}
