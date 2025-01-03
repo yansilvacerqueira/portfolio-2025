@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+'use client'
+import React, { ReactNode, useState } from 'react';
 
-const AccordionItem = ({ title, children }) => {
-  const [isOpen, setIsOpen] = useState(false);
+interface AccordionItemProps {
+  title: string
+  children: ReactNode
+  open?: boolean
+}
+
+const AccordionItem = ({ title, children, open = false }: AccordionItemProps) => {
+  const [isOpen, setIsOpen] = useState(open);
 
   return (
     <div className="border-b border-gray-200 last:border-0">
@@ -12,7 +18,7 @@ const AccordionItem = ({ title, children }) => {
       >
         <span className="text-sm font-medium text-gray-900">{title}</span>
         <div className={`transform transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
-          <ChevronDown className="w-5 h-5 text-gray-500" />
+
         </div>
       </button>
       <div
@@ -36,12 +42,12 @@ const AccordionItem = ({ title, children }) => {
 
 export const Accordion = () => {
   return (
-    <div className="w-full max-w-md bg-white rounded-lg shadow-sm overflow-hidden">
-      <AccordionItem title="Are you available to hire full time?">
+    <div className="w-full max-w-md  rounded-lg shadow-sm overflow-hidden">
+      <AccordionItem title="Are you available to hire full time?" open>
         At the moment, I'm pretty happy where I am. Currently I am not looking for any full-time opportunities. But I feel lucky and, like most people, I'm always open to hearing about new challenges and other fun stuff.
       </AccordionItem>
 
-      <AccordionItem title="How do your quote pricing works and when can we get on call?">
+      <AccordionItem title="How do your quote pricing works and when can we get on call?" open>
         Pricing depends on project complexity and timeline. Let's schedule a call to discuss details.
       </AccordionItem>
 

@@ -14,6 +14,7 @@ import { ProjectsSection } from "@/sections/Projects";
 import { TapeSection } from "@/sections/Tape";
 import { TestimonialsSection } from "@/sections/Testimonials";
 import { AnimatePresence, motion } from "framer-motion";
+import { FaqSection } from "@/sections/Faq";
 
 export default function Home() {
   const [showLoading, setShowLoading] = useState(true)
@@ -68,6 +69,9 @@ export default function Home() {
           <AboutSection />
 
           <ContactSection />
+          <FaqSection />
+
+
           <Footer />
         </motion.div>
       )}

@@ -1,6 +1,17 @@
 import ArrowDown from '@/assets/icons/arrow-down.svg'
 
 export const HeroSection = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <div id="home" className="py-32 md:py-48 lg:py-60 relative overflow-x-clip">
       <div className="size-[620px] hero-ring animate-pulse-ring-1" />
@@ -35,7 +46,7 @@ export const HeroSection = () => {
         </div>
 
         <div className='flex flex-col md:flex-row justify-center  items-center mt-8 gap-4 relative'>
-          <button className='inline-flex items-center gap-2 border border-black/15 px-6 h-12 rounded-xl hover:animate-button-hover'>
+          <button className='inline-flex items-center gap-2 border border-black/15 px-6 h-12 rounded-xl hover:animate-button-hover' onClick={() => scrollToSection("projects")}>
             <span className="font-semibold" >Explore my work</span>
 
             <ArrowDown className="size-4" />
