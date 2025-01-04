@@ -12,11 +12,11 @@ const projects = [
   {
     company: "Incript",
     year: "2024",
-    title: "Software company",
+    title: "Digital Transformation for Brazilian DMV",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Development high-performance React Native app for 500+ driving schools" },
+      { title: "Implemented full-stack solution with Angular and NestJS" },
+      { title: "Optimized system by 20% through strategic refactoring" },
     ],
     link: "https://www.incript.com.br",
     image: incript,
@@ -24,11 +24,11 @@ const projects = [
   {
     company: "Kouloo",
     year: "2024",
-    title: "The application Kouloo allows you to synchronize in a few clicks the preparation of your children.",
+    title: "Bilingual Childcare Management Platform.",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Engineered scalable React Native solution" },
+      { title: "Built admin dashboard with multiple languages FR/EN" },
+      { title: "Successfully integration with Firebase and GCP" },
     ],
     link: "https://kouloo.com",
     image: kouloo,
@@ -36,11 +36,11 @@ const projects = [
   {
     company: "Congenial",
     year: "2023",
-    title: "Educational Technolagy Company",
+    title: "Large-Scale Learning Management System",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Developed platform serving 10,000+ students" },
+      { title: "Doubled platform performance through advanced routing optimization" },
+      { title: "Improved payment processing through system redesign with queue" },
     ],
     link: "https://app.congenial.com.br",
     image: congenial,
@@ -60,7 +60,7 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-gray-500 mt-4 md:text-lg max-w-md mx-auto lg:text-xl">
-          See how I transformed concepts into engaging digital experiences.
+          See how I transformed code into engaging digital experiences.
         </p>
 
 

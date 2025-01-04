@@ -45,10 +45,10 @@ export const TestimonialsSection = () => {
     <section className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader
-          firstText="Happy clients"
-          title="What clients Say About Me"
-          description="Don't just take my word for it. See What my clients have to say
-        about my work."
+          firstText="Growing with the team"
+          title="What Work Friends Say About Me"
+          description="Don't just take my word. See What my work friends have to say
+        about my job."
         />
 
         <div className="mt-10 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
