@@ -16,12 +16,12 @@ import { TestimonialsSection } from "@/sections/Testimonials";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaqSection } from "@/sections/Faq";
 
-import { appWithTranslation, useTranslation } from 'next-i18next'
+import { appWithTranslation } from 'next-i18next'
 import '../../i18n';
 
 const Home = () => {
   const [showLoading, setShowLoading] = useState(true)
-  const { t } = useTranslation('common')
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoading(false)
@@ -62,7 +62,6 @@ const Home = () => {
             ease: [0.43, 0.13, 0.23, 0.96]
           }}
         >
-          <p>{t('h1')}</p>
           <Header />
           <HeroSection />
 
@@ -74,7 +73,6 @@ const Home = () => {
 
           <ContactSection />
           <FaqSection />
-
 
           <Footer />
         </motion.div>

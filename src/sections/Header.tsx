@@ -1,9 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Globe } from "lucide-react";
 
+import { useTranslation } from 'next-i18next'
+import i18n from 'i18next';
+
 export const Header = () => {
   const [activeSection, setActiveSection] = useState('home');
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState(i18n.language || 'en');
+
+  const { t } = useTranslation('common')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,7 +47,9 @@ export const Header = () => {
   };
 
   const toggleLanguage = () => {
-    setLanguage(prev => prev === 'en' ? 'pt' : 'en');
+    const newLanguage = language === 'en' ? 'pt' : 'en';
+    setLanguage(newLanguage);
+    i18n.changeLanguage(newLanguage);
   };
 
   const getTranslateX = () => {
@@ -66,21 +73,21 @@ export const Header = () => {
           onClick={() => scrollToSection('home')}
           className={`nav-item relative z-10 transition-colors duration-300 ${activeSection === 'home' ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
         >
-          Home
+          {t('nav.home')}
         </a>
 
         <a
           onClick={() => scrollToSection('projects')}
           className={`nav-item relative z-10 transition-colors duration-300 ${activeSection === 'projects' ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
         >
-          Projects
+          {t('nav.projects')}
         </a>
 
         <a
           onClick={() => scrollToSection('about')}
           className={`nav-item relative z-10 transition-colors duration-300 ${activeSection === 'about' ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
         >
-          About
+          {t('nav.about')}
         </a>
       </nav>
 

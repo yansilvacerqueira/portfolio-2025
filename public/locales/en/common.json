@@ -1,25 +1,68 @@
 {
-  "h1": "A simple example",
-  "change-locale": "Change locale to \"{{changeTo}}\"",
-  "to-second-page": "To second page",
-  "error-with-status": "A {{statusCode}} error occurred on server",
-  "error-without-status": "An error occurred on the server",
-  "title": "Home | next-i18next",
-  "blog": {
-    "appDir": {
-      "question": "Are you using the new Next.js 13/14 app directory?",
-      "answer": "Then check out <1>this blog post</1>.",
-      "link": "https://locize.com/blog/next-app-dir-i18n/"
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About"
+  },
+  "hero": {
+    "status": "Available for new projects",
+    "title": "Building Full-Stack Solutions",
+    "description": "I turn complex ideas into powerful digital solutions. From government apps to educational platforms, I deliver high-performance applications that users love.",
+    "cta": {
+      "explore": "Explore my work",
+      "connect": "Let's Connect"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Real-world results from engaging digital experiences",
+    "items": {
+      "dmv": {
+        "title": "Digital Transformation for Brazilian DMV",
+        "date": "RECENT • 2023"
+      },
+      "childcare": {
+        "title": "Bilingual Childcare Management Platform",
+        "date": "WORKED • 2024"
+      },
+      "lms": {
+        "title": "Large-Scale Learning Management System",
+        "date": "CONSEGNÁL • 2023"
+      }
+    }
+  },
+  "about": {
+    "testimonials": {
+      "title": "What Work Friends Say About Me",
+      "subtitle": "Don't just take my word. See what my work friends have to say about my job."
     },
-    "optimized": {
-      "question": "Do you like to unleash some super powers to have all side optimized translations?",
-      "answer": "Then you may have a look at <1>this blog post</1>.",
-      "link": "https://locize.com/blog/next-i18next/"
+    "world": {
+      "title": "A Glimpse Into My World",
+      "subtitle": "Learn more about who I am and what I do"
     },
-    "ssg": {
-      "question": "Do you want to use SSG (next export)?",
-      "answer": "Then you may have a look at <1>this blog post</1>.",
-      "link": "https://locize.com/blog/next-i18n-static/"
+    "sections": {
+      "hello": "Hello",
+      "toolbox": "My Tool Box",
+      "beyond": "Beyond The Code",
+      "achievements": "My Achievements"
+    }
+  },
+  "faq": {
+    "title": "Frequently Questions",
+    "subtitle": "Your answers here.",
+    "questions": {
+      "fulltime": {
+        "question": "Are you available to hire full time?",
+        "answer": "Absolutely! I'm actively seeking full-time positions where I can contribute my full-stack development expertise. I'm passionate about building scalable solutions and ready to join a team where I can make a meaningful impact."
+      },
+      "pricing": {
+        "question": "How do your quote pricing works and when can we get on call?",
+        "answer": "Pricing depends on project complexity and timeline. Let's schedule a call to discuss details."
+      },
+      "tech": {
+        "question": "What technologies do you specialize in??",
+        "answer": "I specialize in modern web development with React.js, React Native, TypeScript, and Node.js. I have extensive experience with both frontend and backend development, including work with PHP/Yii, MySQL, and cloud services."
+      }
     }
   }
 }
