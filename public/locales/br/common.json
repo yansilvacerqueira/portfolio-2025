@@ -2,132 +2,132 @@
   "nav": {
     "home": "Início",
     "projects": "Projetos",
-    "about": "Sobre"
+    "about": "Sobre Mim"
   },
   "hero": {
-    "status": "Disponível para novos projetos",
-    "title": "Construindo Soluções Full-Stack",
-    "description": "Transformo ideias complexas em soluções digitais poderosas. De aplicativos governamentais a plataformas educacionais, desenvolvo aplicações de alto desempenho que os usuários adoram.",
+    "status": "Disponível para Novos Projetos",
+    "title": "Especialista Full-Stack em Soluções Digitais",
+    "description": "Desenvolvo soluções digitais que transformam ideias em resultados concretos. Com experiência em projetos governamentais e educacionais, entrego aplicações de alta performance que geram valor real para seus usuários.",
     "cta": {
-      "explore": "Explorar meu trabalho",
-      "connect": "Vamos Conectar"
+      "explore": "Conheça meu trabalho",
+      "connect": "Vamos Conversar"
     }
   },
   "projects": {
-    "title1": "Resultados Reais",
+    "title1": "Resultados Comprovados",
     "title": "Projetos em Destaque",
-    "subtitle": "Veja como transformei código em experiências digitais envolventes e criativas.",
+    "subtitle": "Conheça como transformo tecnologia em experiências digitais que impactam positivamente seus usuários.",
     "items": {
       "dmv": {
-        "title": "Transformação Digital para DETRAN Brasileiro",
-        "date": "MAIS RECENTE • 2024 - 2024",
+        "title": "Modernização Digital do DETRAN",
+        "date": "ATUAL • 2024 - 2024",
         "results": [
           {
-            "title": "Desenvolvimento de app React Native de alto desempenho para mais de 500 autoescolas"
+            "title": "Desenvolvimento de aplicativo React Native otimizado para mais de 500 autoescolas"
           },
           {
-            "title": "Implementação de solução full-stack com Angular e NestJS"
+            "title": "Implementação de sistema integrado com Angular e NestJS"
           },
           {
-            "title": "Otimização do sistema em 20% através de refatoração estratégica"
+            "title": "Otimização de performance em 20% através de refatoração estratégica"
           }
         ]
       },
       "childcare": {
-        "title": "Plataforma Bilíngue de Gestão de Creches",
-        "date": "TRABALHEI • 2024 - 2024",
+        "title": "Plataforma Bilíngue para Gestão de Creches",
+        "date": "CONCLUÍDO • 2024 - 2024",
         "results": [
           {
-            "title": "Desenvolvimento de solução escalável em React Native"
+            "title": "Desenvolvimento de solução em React Native"
           },
           {
-            "title": "Construção de painel administrativo com múltiplos idiomas FR/EN"
+            "title": "Implementação de painel administrativo bilíngue FR/EN"
           },
           {
-            "title": "Integração bem-sucedida com Firebase e GCP"
+            "title": "Integração otimizada com Firebase e GCP"
           }
         ]
       },
       "lms": {
-        "title": "Sistema de Gestão de Aprendizagem em Larga Escala",
-        "date": "TRABALHEI • 2023 - 2024",
+        "title": "Sistema de Gestão de Aprendizagem Enterprise",
+        "date": "CONCLUÍDO • 2023 - 2024",
         "results": [
           {
-            "title": "Desenvolvimento de plataforma atendendo mais de 10.000 alunos"
+            "title": "Desenvolvimento de plataforma robusta para mais de 10.000 usuários"
           },
           {
-            "title": "Dobrou o desempenho da plataforma através de otimização avançada de rotas"
+            "title": "Aumento na performance através de otimização com lazy loading, processamentos com fila e etc"
           },
           {
-            "title": "Melhorou o processamento de pagamentos através da reformulação do sistema com filas"
+            "title": "Implementação de sistema de pagamentos com processamento em fila"
           }
         ]
       }
     }
   },
   "buttons": {
-    "visitSite": "Visitar site"
+    "visitSite": "Visualizar projeto"
   },
   "about": {
     "testimonials": {
-      "growth": "crescendo com o time",
-      "title": "O que Colegas de Trabalho Dizem Sobre Mim",
-      "subtitle": "Não tome apenas minha palavra. Veja o que meus colegas de trabalho têm a dizer sobre meu trabalho."
+      "growth": "desenvolvimento profissional",
+      "title": "Feedback Profissional",
+      "subtitle": "Confira a experiência de colegas e parceiros que trabalharam comigo."
     },
     "world": {
-      "aboutMe": "Sobre mim",
-      "title": "Um Vislumbre do Meu Mundo",
-      "subtitle": "Saiba mais sobre quem sou e o que faço"
+      "aboutMe": "Sobre Mim",
+      "title": "Minha Trajetória",
+      "subtitle": "Conheça minha experiência e especialidades"
     },
     "sections": {
       "hello": "Olá",
-      "hey": "Olá, esse sou eu.",
-      "toolbox": "Minhas Ferramentas",
-      "toolboxExplore": "Explore as tecnologias e ferramentas que utilizo.",
-      "beyond": "Além do Código",
-      "beyondExplore": "Explore meus interesses por trás do mundo digital.",
-      "achievements": "Minhas Conquistas",
-      "someAchievements": "Algumas conquistas na minha carreira."
+      "hey": "Esse sou eu 🤓 Seja bem-vindo(a) ao meu portfólio",
+      "toolbox": "Tecnologias",
+      "toolboxExplore": "Conheça as tecnologias e ferramentas que utilizo.",
+      "beyond": "Além da Tecnologia",
+      "beyondExplore": "Descubra outros aspectos do meu perfil profissional.",
+      "achievements": "Principais Conquistas",
+      "someAchievements": "Realizações significativas em minha carreira."
     }
   },
   "hobbies": {
-    "cooking": "Cozinhar",
-    "painting": "Pintar",
-    "classical": "Ouvir musica classica",
-    "reading": "Ler",
-    "gym": "Academia",
-    "projects": "Criar novos projetos"
+    "cooking": "Gastronomia",
+    "painting": "Artes visuais",
+    "classical": "Música clássica",
+    "reading": "Literatura",
+    "gym": "Atividade física",
+    "projects": "Desenvolvimento de projetos pessoais"
   },
   "faq": {
-    "doubts": "algumas dúvidas",
+    "doubts": "informações importantes",
     "title": "Perguntas Frequentes",
-    "subtitle": "Suas respostas aqui.",
+    "subtitle": "Respostas para suas principais dúvidas",
     "questions": {
       "fulltime": {
-        "question": "Você está disponível para contratação em tempo integral?",
-        "answer": "Absolutamente! Estou ativamente buscando posições em tempo integral onde posso contribuir com minha experiência em desenvolvimento full-stack. Sou apaixonado por construir soluções escaláveis e estou pronto para me juntar a uma equipe onde posso fazer um impacto significativo."
+        "question": "Você está disponível para contratação em período integral?",
+        "answer": "Sim, estou em busca de oportunidades em tempo integral onde possa aplicar minha experiência em desenvolvimento full-stack. Tenho forte interesse em contribuir com projetos escaláveis e fazer parte de uma equipe comprometida com resultados."
       },
       "pricing": {
-        "question": "Como funciona sua cotação de preços e quando podemos fazer uma chamada?",
-        "answer": "O preço depende da complexidade do projeto e do cronograma. Vamos agendar uma chamada para discutir os detalhes."
+        "question": "Como funciona seu processo de orçamento e agendamento?",
+        "answer": "O investimento é personalizado de acordo com a complexidade do projeto e cronograma. Podemos agendar uma reunião para discutir os detalhes e encontrar a melhor solução para suas necessidades."
       },
       "tech": {
-        "question": "Em quais tecnologias você é especializado?",
-        "answer": "Sou especializado em desenvolvimento web moderno com React.js, React Native, TypeScript e Node.js. Tenho ampla experiência tanto em desenvolvimento frontend quanto backend, incluindo trabalhos com PHP/Yii, MySQL e serviços em nuvem."
+        "question": "Quais são suas principais especialidades técnicas?",
+        "answer": "Sou especializado em desenvolvimento web moderno com React.js, React Native, TypeScript e Node.js. Possuo sólida experiência em desenvolvimento frontend e backend, incluindo PHP/Yii, MySQL e serviços em nuvem."
       },
       "project": {
-        "question": "Como você aborda novos projetos?",
-        "answer": "Começo entendendo completamente os requisitos do projeto e os objetivos de negócios. Minha abordagem se concentra em escrever código limpo e de fácil manutenção, garantindo ao mesmo tempo desempenho e experiência do usuário."
+        "question": "Qual é sua metodologia de trabalho?",
+        "answer": "Inicio com uma análise detalhada dos requisitos e objetivos do negócio. Minha abordagem prioriza código limpo e manutenível, com foco em performance e experiência do usuário."
       },
       "tools": {
-        "question": "Você tem experiência com ferramentas de gerenciamento de projetos?",
-        "answer": "Sim! Tenho proficiência em Jira, Git e outras ferramentas colaborativas. Tenho experiência em liderar apresentações de equipes e orientar desenvolvedores juniores, garantindo entrega tranquila de projetos e compartilhamento de conhecimento."
+        "question": "Qual sua experiência com ferramentas de gestão?",
+        "answer": "Tenho proficiência em Jira, Git e outras ferramentas colaborativas. Experiência em liderança técnica, apresentações e mentoria de desenvolvedores, garantindo entregas consistentes e compartilhamento de conhecimento."
       }
     }
   },
   "contact": {
-    "title": "Vamos criar contato",
-    "description": "Pronto para dar vida ao seu próximo projeto? Vamos nos conectar e discutir seu próximo projeto. Como posso ajudá-lo a alcançar seus objetivos.",
+    "title": "Vamos Iniciar um Projeto",
+    "description": "Pronto para transformar sua ideia em realidade? Entre em contato para discutirmos como posso ajudar a alcançar seus objetivos de negócio.",
     "ctaContact": "Entre em contato"
   }
 }
