@@ -38,13 +38,12 @@ export const HeroSection = () => {
 
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Building Execeptional User Experiences
+            Building Full-Stack Solutions
           </h1>
 
           <p className="mt-4 text-center text-gray-500 md:text-lg">
-            I specialize in transforming designs into functional,
-            high-perfoming web applications.
-            Let's discuss your next project.
+            I turn complex ideas into powerful digital solutions.
+            From government apps to educational platforms, I deliver high-performance applications that users love.
           </p>
 
         </div>
