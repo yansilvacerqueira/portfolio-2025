@@ -14,7 +14,12 @@ import ReactIcon from "@/assets/icons/react.svg"
 import PyIcon from "@/assets/icons/python.svg"
 import NextIcon from "@/assets/icons/nextjs.svg"
 
+import hackerRank from "@/assets/images/hackeranck.png"
+import evento from "@/assets/images/evento.jpeg"
+import myPicture from "@/assets/images/me.jpg"
+
 import { useRef } from "react";
+import Image from "next/image";
 
 const toolBoxItems = [
   {
@@ -147,10 +152,17 @@ export const AboutSection = () => {
                 <div className="flex items-center gap-2">
                   <StarIcon className="size-9 text-black" />
 
-                  <h3 className="font-serif text-3xl text-black">My Reads</h3>
+                  <h3 className="font-serif text-3xl text-black">Hello</h3>
                 </div>
 
-                <p className="text-black/60 mt-5 text-sm md:text-base">Explore the books shaping my perspectives.</p>
+                <p className="text-black/60 mt-5 text-sm md:text-base">Heey, that is me.</p>
+
+                <div className="relative mt-4">
+                  <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-pink-50  to-blue-50 opacity-60 blur transition duration-300 group-hover:opacity-70" />
+
+                  <Image src={myPicture} alt="HackerRank Certificate" className="relative aspect-square w-full rounded-xl object-cover transition duration-300 hover:scale-[1.02]" />
+
+                </div>
               </div>
             </Card>
 
@@ -220,15 +232,26 @@ export const AboutSection = () => {
               </div>
             </Card>
 
-            <Card className="h-[320px] md:col-span-2 lg:col-span-1">
+            <Card className="h-[350px] md:col-span-2 lg:col-span-1">
               <div>
                 <div className="flex items-center gap-2">
                   <StarIcon className="size-9 text-black" />
 
-                  <h3 className="font-serif text-3xl text-black">My Reads</h3>
+                  <h3 className="font-serif text-3xl text-black">My Achievements</h3>
                 </div>
 
-                <p className="text-black/60 mt-5 text-sm md:text-base">Explore the books shaping my perspectives.</p>
+                <p className="text-black/60 mt-5 text-sm md:text-base">Some achievements in my career.</p>
+
+                <div className="relative mt-5 w-full">
+
+                  <div className="absolute left-20 top-6 transition-transform duration-300 hover:-translate-y-2">
+                    <Image src={evento} alt="event" className="rounded-xl" />
+                  </div>
+
+                  <div className="absolute right-20 top-0 transition-transform duration-300 hover:-translate-y-2">
+                    <Image src={hackerRank} alt="HackerRank Certificate" />
+                  </div>
+                </div>
               </div>
             </Card>
           </div>
@@ -237,3 +260,4 @@ export const AboutSection = () => {
     </section>
   );
 };
+
