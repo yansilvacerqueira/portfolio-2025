@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Globe } from "lucide-react";
 
 import { useTranslation } from 'next-i18next'
@@ -9,29 +9,6 @@ export const Header = () => {
   const [language, setLanguage] = useState(i18n.language || 'en');
 
   const { t } = useTranslation('common')
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ['home', 'projects', 'about'];
-      const scrollPosition = window.scrollY;
-
-      sections.forEach(section => {
-        const element = document.getElementById(section);
-
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section);
-          }
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -52,22 +29,9 @@ export const Header = () => {
     i18n.changeLanguage(newLanguage);
   };
 
-  const getTranslateX = () => {
-    const sections = ['home', 'projects', 'about'];
-    return `${sections.indexOf(activeSection) * 100}%`;
-  };
-
-
   return (
     <div className="fixed top-3 left-0 right-0 flex justify-center items-center z-50">
       <nav className="flex gap-1 p-0.5 border border-black/5 bg-black/10 backdrop-blur rounded-full relative">
-        <div
-          className="absolute inset-0.5 bg-white rounded-full transition-transform duration-300 ease-out"
-          style={{
-            width: '33%',
-            transform: `translateX(${getTranslateX()})`,
-          }}
-        />
 
         <a
           onClick={() => scrollToSection('home')}
