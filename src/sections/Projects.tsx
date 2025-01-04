@@ -7,60 +7,53 @@ import incript from "@/assets/images/incript.png";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import { Card } from "@/components/Card";
+import { useTranslation } from "react-i18next";
 
-const projects = [
-  {
-    company: "Incript",
-    year: "2024",
-    title: "Digital Transformation for Brazilian DMV",
-    results: [
-      { title: "Development high-performance React Native app for 500+ driving schools" },
-      { title: "Implemented full-stack solution with Angular and NestJS" },
-      { title: "Optimized system by 20% through strategic refactoring" },
-    ],
-    link: "https://www.incript.com.br",
-    image: incript,
-  },
-  {
-    company: "Kouloo",
-    year: "2024",
-    title: "Bilingual Childcare Management Platform.",
-    results: [
-      { title: "Engineered scalable React Native solution" },
-      { title: "Built admin dashboard with multiple languages FR/EN" },
-      { title: "Successfully integration with Firebase and GCP" },
-    ],
-    link: "https://kouloo.com",
-    image: kouloo,
-  },
-  {
-    company: "Congenial",
-    year: "2023",
-    title: "Large-Scale Learning Management System",
-    results: [
-      { title: "Developed platform serving 10,000+ students" },
-      { title: "Doubled platform performance through advanced routing optimization" },
-      { title: "Improved payment processing through system redesign with queue" },
-    ],
-    link: "https://app.congenial.com.br",
-    image: congenial,
-  },
-];
+
 
 export const ProjectsSection = () => {
+  const { t } = useTranslation('common')
+
+  const projects: any[] = [
+    {
+      company: "Incript",
+      year: t('projects.items.dmv.date'),
+      title: t('projects.items.dmv.title'),
+      results: t('projects.items.dmv.results', { returnObjects: true }),
+      link: "https://www.incript.com.br",
+      image: incript,
+    },
+    {
+      company: "Kouloo",
+      year: t('projects.items.childcare.date'),
+      title: t('projects.items.childcare.title'),
+      results: t('projects.items.childcare.results', { returnObjects: true }),
+      link: "https://kouloo.com",
+      image: kouloo,
+    },
+    {
+      company: "Congenial",
+      year: t('projects.items.lms.date'),
+      title: t('projects.items.lms.title'),
+      results: t('projects.items.lms.results', { returnObjects: true }),
+      link: "https://app.congenial.com.br",
+      image: congenial,
+    },
+  ];
+
   return (
     <section id="projects" className="mt-48 pb-16 lg:py-24">
       <div className="container">
         <p className="uppercase font-semibold  tracking-widest bg-gradient-to-r from-gray-600 to-gray-800  text-transparent bg-clip-text text-center">
-          Real World Results
+          {t('projects.title1')}
         </p>
 
         <h2 className="font-serif text-3xl text-center mt-6 md:text-5xl">
-          Featured Projects
+          {t('projects.title')}
         </h2>
 
         <p className="text-center text-gray-500 mt-4 md:text-lg max-w-md mx-auto lg:text-xl">
-          See how I transformed code into engaging digital experiences.
+          {t('projects.subtitle')}
         </p>
 
 
@@ -95,7 +88,7 @@ export const ProjectsSection = () => {
                   <hr className="border-t-2 border-black/20 mt-4 md:mt-5" />
 
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
-                    {project.results.map((result, index) => (
+                    {project.results.map((result: any, index: any) => (
                       <li key={index} className="flex gap-2 text-sm md:text-base">
                         <span className="inline-flex gap-2 text-black/50">
                           <CheckIcon className="size-5 md:size-6" />
@@ -106,7 +99,7 @@ export const ProjectsSection = () => {
                   </ul>
 
                   <a href={project.link} target="_blank" className="gap-2 bg-black text-white h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center mt-8 md:w-auto px-8 hover:animate-button-hover" >
-                    <span>Visit Live Site</span>
+                    <span>{t('buttons.visitSite')}</span>
 
                     <ArrowUpRightIcon className="size-4" />
                   </a>

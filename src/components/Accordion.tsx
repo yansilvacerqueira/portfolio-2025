@@ -1,5 +1,6 @@
 'use client'
 import React, { ReactNode, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface AccordionItemProps {
   title: string
@@ -41,31 +42,29 @@ const AccordionItem = ({ title, children, open = false }: AccordionItemProps) =>
 };
 
 export const Accordion = () => {
+  const { t } = useTranslation('common')
+
   return (
     <div className="w-full max-w-md rounded-lg border border-gray-200  shadow-sm overflow-hidden">
-      <AccordionItem title="Are you available to hire full time?" open>
-        Absolutely! I'm actively seeking full-time positions where I can contribute my full-stack development expertise.
-        I'm passionate about building scalable solutions and ready to join a team where I can make a meaningful impact.
+      <AccordionItem title={t('faq.questions.fulltime.question')} open>
+        {t('faq.questions.fulltime.answer')}
       </AccordionItem>
 
-      <AccordionItem title="How do your quote pricing works and when can we get on call?" open>
-        Pricing depends on project complexity and timeline. Let's schedule a call to discuss details.
+      <AccordionItem title={t('faq.questions.pricing.question')} open>
+        {t('faq.questions.pricing.answer')}
       </AccordionItem>
 
-      <AccordionItem title="What technologies do you specialize in??" open>
-        I specialize in modern web development with React.js, React Native, TypeScript, and Node.js.
-        I have extensive experience with both frontend and backend development, including work with PHP/Yii, MySQL, and cloud services.
+      <AccordionItem title={t('faq.questions.tech.question')} open>
+        {t('faq.questions.tech.answer')}
       </AccordionItem>
 
-      <AccordionItem title="How do you approach new projects???">
-        I start by thoroughly understanding the project requirements and business goals.
-        My approach focuses on writing clean, maintainable code while ensuring optimal performance and user experience.
-        I've successfully led projects that improved system performance by up to 30%.
+      <AccordionItem title={t('faq.questions.project.question')}>
+        {t('faq.questions.project.answer')}
+
       </AccordionItem>
 
-      <AccordionItem title='Do you have experience with project management tools?'>
-        Yes! I'm proficient with Jira, Git, and other collaborative tools.
-        I have experience leading team presentations and mentoring junior developers, ensuring smooth project delivery and knowledge sharing.
+      <AccordionItem title={t('faq.questions.tools.question')}>
+        {t('faq.questions.tools.answer')}
       </AccordionItem>
     </div>
   );

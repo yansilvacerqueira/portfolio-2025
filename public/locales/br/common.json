@@ -14,40 +14,92 @@
     }
   },
   "projects": {
+    "title1": "Resultados Reais",
     "title": "Projetos em Destaque",
-    "subtitle": "Resultados reais de experiências digitais envolventes",
+    "subtitle": "Veja como transformei código em experiências digitais envolventes e criativas.",
     "items": {
       "dmv": {
         "title": "Transformação Digital para DETRAN Brasileiro",
-        "date": "RECENTE • 2023"
+        "date": "MAIS RECENTE • 2024 - 2024",
+        "results": [
+          {
+            "title": "Desenvolvimento de app React Native de alto desempenho para mais de 500 autoescolas"
+          },
+          {
+            "title": "Implementação de solução full-stack com Angular e NestJS"
+          },
+          {
+            "title": "Otimização do sistema em 20% através de refatoração estratégica"
+          }
+        ]
       },
       "childcare": {
         "title": "Plataforma Bilíngue de Gestão de Creches",
-        "date": "TRABALHOU • 2024"
+        "date": "TRABALHEI • 2024 - 2024",
+        "results": [
+          {
+            "title": "Desenvolvimento de solução escalável em React Native"
+          },
+          {
+            "title": "Construção de painel administrativo com múltiplos idiomas FR/EN"
+          },
+          {
+            "title": "Integração bem-sucedida com Firebase e GCP"
+          }
+        ]
       },
       "lms": {
         "title": "Sistema de Gestão de Aprendizagem em Larga Escala",
-        "date": "CONSIGNADO • 2023"
+        "date": "TRABALHEI • 2023 - 2024",
+        "results": [
+          {
+            "title": "Desenvolvimento de plataforma atendendo mais de 10.000 alunos"
+          },
+          {
+            "title": "Dobrou o desempenho da plataforma através de otimização avançada de rotas"
+          },
+          {
+            "title": "Melhorou o processamento de pagamentos através da reformulação do sistema com filas"
+          }
+        ]
       }
     }
   },
+  "buttons": {
+    "visitSite": "Visitar site"
+  },
   "about": {
     "testimonials": {
+      "growth": "crescendo com o time",
       "title": "O que Colegas de Trabalho Dizem Sobre Mim",
       "subtitle": "Não tome apenas minha palavra. Veja o que meus colegas de trabalho têm a dizer sobre meu trabalho."
     },
     "world": {
+      "aboutMe": "Sobre mim",
       "title": "Um Vislumbre do Meu Mundo",
       "subtitle": "Saiba mais sobre quem sou e o que faço"
     },
     "sections": {
       "hello": "Olá",
+      "hey": "Olá, esse sou eu.",
       "toolbox": "Minhas Ferramentas",
+      "toolboxExplore": "Explore as tecnologias e ferramentas que utilizo.",
       "beyond": "Além do Código",
-      "achievements": "Minhas Conquistas"
+      "beyondExplore": "Explore meus interesses por trás do mundo digital.",
+      "achievements": "Minhas Conquistas",
+      "someAchievements": "Algumas conquistas na minha carreira."
     }
   },
+  "hobbies": {
+    "cooking": "Cozinhar",
+    "painting": "Pintar",
+    "classical": "Ouvir musica classica",
+    "reading": "Ler",
+    "gym": "Academia",
+    "projects": "Criar novos projetos"
+  },
   "faq": {
+    "doubts": "algumas dúvidas",
     "title": "Perguntas Frequentes",
     "subtitle": "Suas respostas aqui.",
     "questions": {
@@ -62,7 +114,20 @@
       "tech": {
         "question": "Em quais tecnologias você é especializado?",
         "answer": "Sou especializado em desenvolvimento web moderno com React.js, React Native, TypeScript e Node.js. Tenho ampla experiência tanto em desenvolvimento frontend quanto backend, incluindo trabalhos com PHP/Yii, MySQL e serviços em nuvem."
+      },
+      "project": {
+        "question": "Como você aborda novos projetos?",
+        "answer": "Começo entendendo completamente os requisitos do projeto e os objetivos de negócios. Minha abordagem se concentra em escrever código limpo e de fácil manutenção, garantindo ao mesmo tempo desempenho e experiência do usuário."
+      },
+      "tools": {
+        "question": "Você tem experiência com ferramentas de gerenciamento de projetos?",
+        "answer": "Sim! Tenho proficiência em Jira, Git e outras ferramentas colaborativas. Tenho experiência em liderar apresentações de equipes e orientar desenvolvedores juniores, garantindo entrega tranquila de projetos e compartilhamento de conhecimento."
       }
     }
+  },
+  "contact": {
+    "title": "Vamos criar contato",
+    "description": "Pronto para dar vida ao seu próximo projeto? Vamos nos conectar e discutir seu próximo projeto. Como posso ajudá-lo a alcançar seus objetivos.",
+    "ctaContact": "Entre em contato"
   }
 }

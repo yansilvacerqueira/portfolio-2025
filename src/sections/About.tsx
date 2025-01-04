@@ -20,6 +20,7 @@ import myPicture from "@/assets/images/me.jpg"
 
 import { useRef } from "react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const toolBoxItems = [
   {
@@ -88,61 +89,62 @@ const toolBoxItems2 = [
   },
 ]
 
-const hobbies = [
-  {
-    title: 'Painting',
-    emoji: '🎨',
-    left: '5%',
-    top: '5%'
-  },
-  {
-    title: 'Cooking',
-    emoji: '🍳',
-    left: '50%',
-    top: '5%'
-  },
-  {
-    title: 'Listening Classical Music',
-    emoji: '🎶',
-    left: '10%',
-    top: '35%'
-  },
-  {
-    title: 'Crypto',
-    emoji: '🪙',
-    left: '35%',
-    top: '40%'
-  },
-  {
-    title: 'Reading',
-    emoji: '📚',
-    left: '70%',
-    top: '45%'
-  },
-  {
-    title: 'New projects',
-    emoji: '👩‍💻',
-    left: '5%',
-    top: '65%'
-  },
-  {
-    title: 'Gym',
-    emoji: '🏋',
-    left: '45%',
-    top: '70%'
-  },
-]
-
 export const AboutSection = () => {
   const constraintRef = useRef(null)
+  const { t } = useTranslation('common')
+
+  const hobbies = [
+    {
+      title: t('hobbies.painting'),
+      emoji: '🎨',
+      left: '5%',
+      top: '5%'
+    },
+    {
+      title: t('hobbies.cooking'),
+      emoji: '🍳',
+      left: '50%',
+      top: '5%'
+    },
+    {
+      title: t('hobbies.classical'),
+      emoji: '🎶',
+      left: '10%',
+      top: '35%'
+    },
+    {
+      title: 'Crypto',
+      emoji: '🪙',
+      left: '35%',
+      top: '40%'
+    },
+    {
+      title: t('hobbies.reading'),
+      emoji: '📚',
+      left: '70%',
+      top: '45%'
+    },
+    {
+      title: t('hobbies.projects'),
+      emoji: '👩‍💻',
+      left: '5%',
+      top: '65%'
+    },
+    {
+      title: t('hobbies.gym'),
+      emoji: '🏋',
+      left: '45%',
+      top: '70%'
+    },
+  ]
 
   return (
     <section id="about" className="py-20">
       <div className="container">
         <SectionHeader
-          firstText="About Me"
-          title="A Glimpse Into My World"
-          description="Learn more about who I am and what i do"
+          firstText={t('about.world.aboutMe')}
+          title={t('about.world.title')}
+          description={t('about.world.subtitle')}
         />
 
         <div className="mt-20 flex flex-col gap-8">
@@ -152,10 +154,10 @@ export const AboutSection = () => {
                 <div className="flex items-center gap-2">
                   <StarIcon className="size-9 text-black" />
 
-                  <h3 className="font-serif text-3xl text-black">Hello</h3>
+                  <h3 className="font-serif text-3xl text-black">{t('about.sections.hello')}</h3>
                 </div>
 
-                <p className="text-black/60 mt-5 text-sm md:text-base">Heey, that is me.</p>
+                <p className="text-black/60 mt-5 text-sm md:text-base">{t('about.sections.hey')}</p>
 
                 <div className="relative mt-4">
                   <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-pink-50  to-blue-50 opacity-60 blur transition duration-300 group-hover:opacity-70" />
@@ -170,10 +172,10 @@ export const AboutSection = () => {
               <div>
                 <div className="flex items-center gap-2">
                   <StarIcon className="size-9 text-black" />
-                  <h3 className="font-serif text-3xl text-black">My Tool Box</h3>
+                  <h3 className="font-serif text-3xl text-black">{t('about.sections.toolbox')}</h3>
                 </div>
 
-                <p className="text-black/60 mt-5 text-sm md:text-base">Explore the technologies and tools i use to create a good digital experiences.</p>
+                <p className="text-black/60 mt-5 text-sm md:text-base">{t('about.sections.toolboxExplore')}</p>
               </div>
 
               <div className="py-6 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
@@ -206,10 +208,10 @@ export const AboutSection = () => {
                 <div className="flex items-center gap-2">
                   <StarIcon className="size-9 text-black" />
 
-                  <h3 className="font-serif text-3xl text-black">Beyond The Code</h3>
+                  <h3 className="font-serif text-3xl text-black">{t('about.sections.beyond')}</h3>
                 </div>
 
-                <p className="text-black/60 mt-5 text-sm md:text-base">Explore my interests and hobbies beyond the digital world.</p>
+                <p className="text-black/60 mt-5 text-sm md:text-base">{t('about.sections.beyondExplore')}</p>
               </div>
 
               <div className="mt-6 relative flex-1" ref={constraintRef}>
@@ -237,10 +239,10 @@ export const AboutSection = () => {
                 <div className="flex items-center gap-2">
                   <StarIcon className="size-9 text-black" />
 
-                  <h3 className="font-serif text-3xl text-black">My Achievements</h3>
+                  <h3 className="font-serif text-3xl text-black">{t('about.sections.achievements')}</h3>
                 </div>
 
-                <p className="text-black/60 mt-5 text-sm md:text-base">Some achievements in my career.</p>
+                <p className="text-black/60 mt-5 text-sm md:text-base">{t('about.sections.someAchievements')}</p>
 
                 <div className="relative mt-5 w-full">
 

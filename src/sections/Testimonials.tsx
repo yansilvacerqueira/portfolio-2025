@@ -1,11 +1,15 @@
+import Image from "next/image";
+import { useTranslation } from "react-i18next";
+
 import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
 import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
+
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
-import Image from "next/image";
 
 const testimonials = [
   {
@@ -41,14 +45,15 @@ const testimonials = [
 ];
 
 export const TestimonialsSection = () => {
+  const { t } = useTranslation('common')
+
   return (
     <section className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader
-          firstText="Growing with the team"
-          title="What Work Friends Say About Me"
-          description="Don't just take my word. See What my work friends have to say
-        about my job."
+          firstText={t('about.testimonials.growth')}
+          title={t('about.testimonials.title')}
+          description={t('about.testimonials.subtitle')}
         />
 
         <div className="mt-10 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
