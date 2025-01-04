@@ -12,6 +12,10 @@ export const HeroSection = () => {
     }
   };
 
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:yansilvacerqueira@outlook.com';
+  };
+
   return (
     <div id="home" className="py-32 md:py-48 lg:py-60 relative overflow-x-clip">
       <div className="size-[620px] hero-ring animate-pulse-ring-1" />
@@ -52,7 +56,7 @@ export const HeroSection = () => {
             <ArrowDown className="size-4" />
           </button>
 
-          <button className='inline-flex items-center gap-2  bg-black  text-white  px-6 h-12 rounded-xl hover:animate-button-hover'>
+          <button onClick={handleEmailClick} className='inline-flex items-center gap-2  bg-black  text-white  px-6 h-12 rounded-xl hover:animate-button-hover'>
             <span className='animate-hand-wave'>👋</span>
 
             <span className="font-semibold">Let's Connect</span>
