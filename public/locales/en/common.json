@@ -86,6 +86,7 @@
       "toolboxExplore": "Explore the technologies and tools I utilize.",
       "beyond": "Beyond Technology",
       "beyondExplore": "Discover other aspects of my professional profile.",
+      "dragItems": "Click and drag items to explore 😉",
       "achievements": "Key Achievements",
       "someAchievements": "Significant accomplishments in my career."
     }
@@ -129,5 +130,10 @@
     "title": "Let's Start a Project",
     "description": "Ready to transform your idea into reality? Let's discuss how I can help achieve your business objectives.",
     "ctaContact": "Contact Me"
+  },
+  "feedback": {
+    "roberto": "After working together for almost three years, I can confidently say that Yan is one of the best developers I’ve ever known. His ability to analyze, understand, and solve complex problems is truly remarkable. Yan is a true team player who is always willing to lend a helping hand, share knowledge, and grow alongside his team. His approachable demeanor and dedication to teamwork foster a positive and highly productive work environment for everyone around him. I would be thrilled to have the opportunity to work with Yan again in the future.",
+    "cadu": "I had the pleasure of working alongside Yan for two years, and it was an incredible experience. He always stood out as both a developer and instructor, sharing his knowledge and helping the team overcome challenges and achieve excellent results. His experience was fundamental to my technical and professional growth. Additionally, Yan always contributed to projects with innovative ideas that made a difference in the work's progress and quality. An exemplary and inspiring professional!",
+    "arthur": "During our time working together, Yan elevated the project's standards in terms of code structure and organization. His skills with data structures and algorithms significantly contributed to improving team performance. I recommend him for his technical capability and strategic participation in any project."
   }
 }

@@ -85,7 +85,8 @@
       "toolbox": "Tecnologias",
       "toolboxExplore": "Conheça as tecnologias e ferramentas que utilizo.",
       "beyond": "Além da Tecnologia",
-      "beyondExplore": "Descubra outros aspectos do meu perfil profissional.",
+      "beyondExplore": "Descubra outros aspectos do meu perfil profissional. ",
+      "dragItems": "Clique e arraste os itens para explorar 😉",
       "achievements": "Principais Conquistas",
       "someAchievements": "Realizações significativas em minha carreira."
     }
@@ -129,5 +130,10 @@
     "title": "Vamos Iniciar um Projeto",
     "description": "Pronto para transformar sua ideia em realidade? Entre em contato para discutirmos como posso ajudar a alcançar seus objetivos de negócio.",
     "ctaContact": "Entre em contato"
+  },
+  "feedback": {
+    "roberto": "Depois de trabalhar juntos por quase três anos, posso afirmar com certeza que Yan é um dos melhores desenvolvedores que já conheci. Sua capacidade de analisar, entender e resolver problemas complexos é verdadeiramente notável. Yan é um verdadeiro jogador de equipe, sempre disposto a ajudar, compartilhar conhecimento e crescer junto com seu time. Seu comportamento acessível e dedicação ao trabalho em equipe promovem um ambiente de trabalho positivo e altamente produtivo para todos ao seu redor. Eu ficaria muito feliz em ter a oportunidade de trabalhar com Yan novamente no futuro.",
+    "cadu": "Tive o prazer de trabalhar ao lado do Yan por dois anos, e foi uma experiência incrível. Ele sempre se destacou como desenvolvedor e como instrutor, compartilhando seu conhecimento e ajudando a equipe a superar desafios e alcançar excelentes resultados. Sua experiência foi fundamental para o meu crescimento técnico e profissional. Além disso, Yan sempre contribuiu para os projetos com ideias inovadoras, que faziam a diferença no andamento e na qualidade do trabalho. Um profissional exemplar e inspirador!",
+    "arthur": "Durante o tempo que trabalhamos juntos, Yan elevou o padrão do projeto em níveis de estrutura e organização de código. Suas habilidades com estrutura de dados e algoritmos contribuíram significativamente na melhora do desempenho da equipe. Recomendo por sua capacidade técnica e participação estratégica em qualquer projeto."
   }
 }

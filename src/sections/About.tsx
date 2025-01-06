@@ -163,7 +163,6 @@ export const AboutSection = () => {
                   <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-pink-50  to-blue-50 opacity-60 blur transition duration-300 group-hover:opacity-70" />
 
                   <Image src={myPicture} alt="HackerRank Certificate" className="relative aspect-square w-full rounded-xl object-cover transition duration-300 hover:scale-[1.02]" />
-
                 </div>
               </div>
             </Card>
@@ -202,19 +201,24 @@ export const AboutSection = () => {
             </Card>
           </div>
 
-          <div className=" flex flex-col gap-8 md:grid md:grid-cols-5 md:gap-8 lg:grid-cols-3">
+          <div className="flex flex-col gap-8 md:grid md:grid-cols-5 md:gap-8 lg:grid-cols-3" ref={constraintRef}>
             <Card className="h-[320px] flex flex-col md:col-span-3 lg:col-span-2">
               <div>
                 <div className="flex items-center gap-2">
                   <StarIcon className="size-9 text-black" />
 
+                  <div>
+
                   <h3 className="font-serif text-3xl text-black">{t('about.sections.beyond')}</h3>
+                  <span className="text-black/60 mt-5 text-sm md:text-base">{t("about.sections.dragItems")}</span>
+                  </div>
+
                 </div>
 
                 <p className="text-black/60 mt-5 text-sm md:text-base">{t('about.sections.beyondExplore')}</p>
               </div>
 
-              <div className="mt-6 relative flex-1" ref={constraintRef}>
+              <div className="mt-6 relative flex-1">
                 {hobbies.map((hobby, i) => (
                   <motion.div
                     key={i}
